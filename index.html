@@ -5,37 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
-    <div class="quizContainer container-fluid well well-lg">
-        <div id="quiz1" class="text-center">
-
-            <h1>Code Quiz!!</h1>
-
-            <!-- <h3 style="color:purple; text-align: left">
-                <span id="TimeShow">Time Remaining: </span>
-                <span id='timer' style="font-size:25px;"></span>
-            </h3>  -->
+    <div id="landing">
+        
+        <h1>Code Quiz!!</h1>
+        
+        
+        <div>
+            <button class="btn" id="start-btn"> Start Button </button>
         </div>
-        <div id="landing">
-            <div>
-                <div id="timer" data-time="75"><span>Time Remaining:</span> </div>
-                <button id="startBtn"> Start Button </button>
-            </div>
-        </div>
-        <div id="questions">
-            <div id="q-Text"></div>
-            <div class="choices"></div>
-        </div>
-
-        <div class="result"></div>
-
     </div>
-    <script src="script.js"></script>
+    <div id="questions">
+        <div id="timer" data-time="10">
+                                
+             <h3>Time Remaining: 10 seconds </h3>                   
+                                
+        </div>                                        
+        <div id="q-text"></div>
+        <div id="choices"></div>
+    </div>
+    <div class="ending">
+        <button class="btn" id="play-btn"> Play Again? </button>
+        <button class="btn" id="highscore-btn"> High Scores </button>
+        <div id="score">
+            <h4> Score: </h3>
+        </div>
+    </div>
+    
+    
+    <script src="./script.js"></script>
 </body>
 
 </html>
